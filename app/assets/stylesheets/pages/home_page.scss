@@ -43,24 +43,20 @@
             text-transform: uppercase;
             font-weight: 300;
             font-size: 26px;
-            width: 100%;
         }
 
         p {
             font-weight: 300;
             font-size: 14px;
-            padding: 0px 15px;
             line-height: 17px;
-            margin-top: 2px;
-            width: 100%;
             box-sizing: border-box;
-            float: left;
         }
     }
 
     .tile-with-image {
         width: 195px;
         height: 225px;
+        margin-bottom: 32px;
 
         img {
             width: 100px;
@@ -70,6 +66,76 @@
             border: 1px solid #ABABAB;
             margin: 16px 0px 8px 0px;
             background: #FFFFFF;
+        }
+
+        h2 {
+            width: 100%;
+        }
+
+        p {
+            padding: 0px 15px;
+            margin-top: 2px;
+            width: 100%;
+            float: left;
+        }
+    }
+
+    .long-tile {
+        width: 436px;
+        height: 92px;
+
+        h2 {
+            float: left;
+            height: 100%;
+            line-height: 92px;    
+            padding-left: 50px;
+            margin-top: -3px;
+        }
+
+        .description-holder {
+            width: 195px;
+            height: 100%;
+            padding: 0px 15px;
+            box-sizing: border-box;
+            float: right;
+            margin-top: -3px;
+            display: table;
+
+            p {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .short-tile {
+        width: 195px;
+        height: 92px;
+
+        h2 {
+            float: left;
+            height: 100%;
+            line-height: 92px;
+            margin-top: -3px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .description {
+        text-align: center;
+
+        p {
+            font-weight: 300;
+            max-width: 700px;
+            margin: auto;
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 25px;
+
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
         }
     }
 }
