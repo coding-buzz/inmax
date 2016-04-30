@@ -4,4 +4,22 @@
     width: 100%;
     min-height: 90px;
     background: #019CDC;
+
+    .content-wrapper {
+        min-height: 90px;
+    }
+
+    .page-navigation {
+        left: 0px;
+        top: 40px;
+
+        a {
+            color: #FFFFFF;
+
+            &:before {
+                color: transparent;
+                border-bottom: 1px solid #FFFFFF;
+            }
+        }
+    }
 }

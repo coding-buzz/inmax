@@ -3,4 +3,32 @@
     background: #F5F5F5;
     box-sizing: border-box;
     border-bottom: 3px solid #CACACA;
+
+    .content-wrapper {
+        min-height: 87px;
+    }
+
+    .logo {
+        width: 174px;
+        height: 96px;
+        background: #014B96;
+        position: absolute;
+        left: 20px;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .page-navigation {
+        left: 235px;
+        bottom: 20px;
+
+        a {
+            color: #858585;
+
+            &:before {
+                color: #014B96;
+                border-bottom: 1px solid #014B96;
+            }
+        }
+    }
 }

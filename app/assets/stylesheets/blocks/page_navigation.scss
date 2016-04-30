@@ -1,0 +1,39 @@
+.page-navigation {
+    font-size: 12px;
+    position: absolute;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        float: left;
+        position: relative;
+        white-space: nowrap;
+
+        &:before {
+            content: attr(data-hover);
+            position: absolute;
+            padding-top: 3px;
+            top: -3px;
+            left: 0px;
+            color: #014B96;
+            max-width: 0px;
+            overflow: hidden;
+            transition: max-width 0.5s;
+            border-bottom: 1px solid #014B96;
+            padding-bottom: 2px;
+        }
+
+        &:hover:before {
+            max-width: 100%;
+        }
+
+        &:after {
+            content: "|";
+            margin: 0px 10px;
+        }
+
+        &:last-of-type:after {
+            display: none;
+        }
+    }
+}
