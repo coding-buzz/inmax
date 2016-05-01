@@ -1,0 +1,7 @@
+<% p = @cms_site.pages.where(:label => param_2).first %>
+
+<% if p %>
+    <%= link_to param_1, p.url(:relative), :data => { :hover => param_1 } %>
+<% else %>
+    <%= link_to 'missing page ' + param_2, '#', :data => { :hover => 'missing page ' + param_2 } %>
+<% end %>
