@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>INMAX S.J.</title>
+</head>
+
+<body style="margin: 0px; overflow: hidden;">
+
+    <script type="text/javascript" src="data/swfobject.js"></script>        
+    <div id="flashcontent">
+        This content requires <a href="http://www.adobe.com/go/getflashplayer/">Adobe Flash Player</a> and a browser with JavaScript enabled.
+    </div> 
+    <script type="text/javascript">
+        var flashvars = {
+          xml_file: "inmax_hi_pl_01.xml"
+        };
+
+        var params = {
+            base: "data/inmax",
+            allowFullScreen: "true",
+            allowScriptAccess: "sameDomain"
+        };
+
+        var attributes = {};
+
+        swfobject.embedSWF("data/pano.swf", "flashcontent", "100%", "100%", "10.0.0","data/_plugins/expressInstall.swf", flashvars, params, attributes);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<panorama>
+  <parameters>
+qualityMotion2=high 
+qualityStatic2=high
+qualityMotion=medium
+qualityStatic=high
+panoType=cylinder
+panoName=inmax_hi_01
+panHome=-45
+tiltHome=-1
+zoomHome=1.00
+
+zoomMax=1.5
+zoomMin=0.6
+layer_15 = ../_plugins/cylConverter.swf
+layer_16 = ../_plugins/hotspots.swf
+layer_17 = ../_plugins/tooltips_zumi.swf
+layer_18 = ../_plugins/glassMeter_zumi.swf
+loaderText=
+loaderBackColor=#000000
+
+
+layer_19 = ../_plugins/autorotator.swf
+layer_20 = ../_plugins/history.swf
+layer_21 = ../_plugins/tourheader.swf
+</parameters>
+  <hotspots>
+    <global stopPano="pano.pan_v=0; pano.tilt_v=0; pano.zoom_v=0;" onLoad="alpha=0; alpha=1,300; " onTransitionEnd="pano.zoom=1.00,1500,strong; timer+=1,750,,onTransitionEnd2" onTransitionEnd2="pano.pan=-45.01,1500,easyIn; pano.tilt=-1,1500; " moveTo02="stopPano; pano.pan=-50,300; pano.tilt=-13,300; pano.zoom=1.5,300; timer+=1,300,,switchTo02" moveTo03="stopPano; switchTo03" moveTo04="stopPano; switchTo04" switchTo02="loadPano(xml_file=inmax_hi_pl_02.xml&amp;pan=167&amp;tilt=-16&amp;zoom=1.5,500);" switchTo03="loadPano(xml_file=inmax_hi_pl_03.xml&amp;pan=0&amp;tilt=-1&amp;zoom=1.5,500);" switchTo04="loadPano(xml_file=inmax_hi_pl_04.xml&amp;pan=-43&amp;tilt=-6&amp;zoom=1.5,500);" showIcons="bar-icons.onClick=hideIcons; hs_02.scale=1,500,elastic; hs_02.buttonmode=1;" hideIcons="bar-icons.onClick=showIcons; hs_02.scale=0,300; hs_02.buttonmode=0;" onEnterFullscreen="pano.zoom=0.8;" onExitFullscreen="pano.zoom=1.0;">
+      <box id="logo" url="../_graphic/logo_norm.png" depth="0" alt="www.zumi.pl" pan="0" tilt="-90" scale="1" smoothing="1" orientation="sphere" segments="8" onClick="openUrl(http://www.zumi.pl, _blank)" onLoad="" onOver="" onOut="" onTransitionStart="" />
+      <spot id="bar-back" url="../_graphic/bar_background.swf" depth="9000" static="1" salign="CB" staticY="-13" scaleX="1920" alpha="0.8" smoothing="1" buttonMode="0" onLoad="" onOut="" onOver="" onTransitionStart="" />
+      <spot id="bar-logo" url="../_graphic/bar_logo.swf" depth="9011" alt="www.zumi.pl" static="1" salign="BL" staticX="40" staticY="-13" smoothing="1" onClick="openUrl(http://www.zumi.pl, _blank)" onLoad="" onTransitionStart="" />
+      <spot id="bar-play-left" url="../_graphic/bar_play_left.swf" depth="9012" alt="Lewo" static="1" salign="LB" staticX="94" staticY="-13" smoothing="1" onClick="stopPano; external.autorotator.speed=0.2; external.autorotator.start=1" onLoad="" onTransitionStart="" />
+      <spot id="bar-play-right" url="../_graphic/bar_play_right.swf" depth="9013" alt="Prawo" static="1" salign="LB" staticX="125" staticY="-13" smoothing="1" onClick="stopPano; external.autorotator.speed=-0.2; external.autorotator.start=1" onLoad="" onTransitionStart="" />
+      <spot id="bar-zoom-out" url="../_graphic/bar_zoom_out.swf" depth="9014" alt="Oddal" static="1" salign="LB" staticX="163" staticY="-13" smoothing="1" onPress="pano.zoomKey=-4,1000,strong" onRelease="pano.zoomKey=0" onLoad="" onTransitionStart="" />
+      <spot id="bar-zoom-in" url="../_graphic/bar_zoom_in.swf" depth="9015" alt="Przybliż" static="1" salign="LB" staticX="182" staticY="-13" smoothing="1" onPress="pano.zoomKey=4,1000,strong" onRelease="pano.zoomKey=0" onLoad="" onTransitionStart="" />
+      <spot id="bar-icons" url="../_graphic/bar_icons.swf" depth="9010" alt="Ikony" static="1" salign="LB" staticX="221" staticY="-13" smoothing="1" onClick="hideIcons" onLoad="" onTransitionStart="" />
+      <spot id="bar-lector" url="../_graphic/bar_lector.swf" depth="9016" alt="Lektor" alpha="0.5" static="1" salign="LB" staticX="252" staticY="-13" smoothing="1" buttonMode="0" onClick="" onLoad="" onTransitionStart="" />
+      <spot id="bar-description-pano" url="../_graphic/bar_description_pano.swf" depth="9017" alt="Opis panoramy" alpha="0.5" static="1" salign="LB" staticX="283" staticY="-13" smoothing="1" buttonMode="0" onClick="description-pano.showHide;" onLoad="" onTransitionStart="" />
+      <spot id="bar-description-general" url="../_graphic/bar_description_general.swf" depth="9018" alt="Opis ogólny" alpha="0.5" static="1" salign="LB" staticX="314" staticY="-13" smoothing="1" buttonMode="0" onClick="description-general.showHide;" onLoad="" onTransitionStart="" />
+      <spot id="bar-full-screen" url="../_graphic/bar_full_screen.swf?full=Pełny ekran&amp;normal=Zmiejsz okno" depth="9019" static="1" salign="BL" staticX="345" staticY="-13" smoothing="1" onClick="fullscreen()" onLoad="" onTransitionStart="" />
+      <spot id="bar-title" url="../_graphic/panoramatitle_zumi.swf?title=INMAX S.J. - Wejście do budynku" depth="9020" static="1" salign="LB" alignX="0" staticX="376" staticY="-23" smoothing="1" buttonMode="0" onLoad="" onTransitionStart="" />
+      <spot id="hs_02" url="../_graphic/arrow_NE.swf" depth="1002" linked="inmax_hi_01" alt="Parter" pan="-49.5137" tilt="-12.9811" orientation="sphere" distorted="0" onClick="moveTo02" />
+      <spot id="tour-header" url="../_graphic/tourheaderpanel_zumi.swf?spot=tour-header" depth="2002" alpha="0" visible="0" distorted="0" static="1" salign="CM" text="INMAX S.J." buttonMode="0" onClick="hide" onLoad="" onOver="" onOut="" show="tour-header.visible=1; tour-header.alpha=0.9,500; timer+=1,10000,,hide; tour-header.buttonMode=1" hide="tour-header.alpha=0,750; timer+=1,750,,hideVisible; tour-header.buttonMode=0" hideVisible="tour-header.visible=0;" />
+    </global>
+  </hotspots>
+  <tooltips>
+    altXOffset=-5
+    altYOffset=-50
+</tooltips>
+  <autorotator>
+    speed=-0.2
+    interval=30
+    pause=15000
+    quality=high
+    disabled=0
+</autorotator>
+  <tourheader>
+    spot=tour-header
+</tourheader>
+  <limits>
+pan_min=
+pan_max=
+tilt_min=
+tilt_max=
+
+</limits>
+</panorama>
