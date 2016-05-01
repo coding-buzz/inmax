@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coding-buzz/comfortable-mexican-sofa
-  revision: ec56caf094b983fd257e149962cd578c195c6d2f
+  revision: 2ab7c17de10e6dd797185a2a7eb178a544f60cfc
   specs:
     comfortable_mexican_sofa (1.12.9)
       active_link_to (>= 1.0.0)
