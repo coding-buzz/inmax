@@ -1,0 +1,31 @@
+.house-plan-page {
+    .floor {
+        margin-bottom: 60px;
+
+        .table-wrapper {
+            float: left;
+        }
+
+        .table-wrapper, .image-wrapper {
+            display: inline-block;
+        }
+
+        .table-wrapper {
+            width: 40%;
+
+            table {
+                width: 100%;
+            }
+        }
+
+        .image-wrapper {
+            width: 60%;
+            margin-left: -5px;
+            text-align: right;
+        }
+    }
+
+    .summary {
+        text-align: center;
+    }
+}

@@ -1,0 +1,7 @@
+<% p = @cms_site.pages.where(:label => param_1).first %>
+
+<% if p %>
+    <%= p.url(:relative) %>
+<% else %>
+    #
+<% end %>
