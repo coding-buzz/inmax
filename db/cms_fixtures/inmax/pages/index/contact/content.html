@@ -1,0 +1,72 @@
+<div class='page contact-page'>
+    <h1 class='page-title'>
+        Dane kontaktowe
+    </h1>
+
+    <div class='contact-data'>
+        <div class='data-wrapper'>
+            <h2>Dane teleadresowe</h2>
+
+            <p>
+                <b>INMAX Spółka Jawna <br />
+                Olesiński Hartman Chudzicki</b>
+            </p>
+
+            <p>
+                <u>Biuro handlowe:</u> <br />
+                95-054 Ksawerów ul. Nowotki 4
+            </p>
+
+            <p>
+                tel. kom.: 0 509 017 727 <br />
+                e-mail: inmax@inmax.com.pl
+            </p>
+
+            <p>
+                pn.-pt. w godz. od 11.00 do 17.00 <br />
+                sob. w godz. od 11.00 do 14.00
+            </p>
+        </div>
+
+        <div class='map-wrapper'>
+            <h2>Lokalizacja</h2>
+            <div id='map'></div>
+            <script>
+                function initMap() {
+                    var mapDiv = document.getElementById('map');
+                    var map = new google.maps.Map(mapDiv, {
+                        center: {lat: 51.682348, lng: 19.403872},
+                        zoom: 15
+                    });
+                    var marker = new google.maps.Marker({
+                        position: {lat: 51.682348, lng: 19.403872},
+                        map: map
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+        </div>
+    </div>
+
+
+    <form class='contact-form'>
+        <h2>Formularz kontaktowy</h2>
+
+        <div class='fields-wrapper'>
+            <label for='name'>Imię i nazwisko</label>
+            <input id='name' type='text' name='name' />
+
+            <label for='email'>Email</label>
+            <input id='email' type='email' name='email' />
+
+            <label for='content'>Treść</label>
+            <textarea id='content' name='content'></textarea>
+
+            <button class='send-message-btn'>Wyślij</button>
+        </div>
+    </form>
+
+    <div class='legal-note'>
+        Spółka wpisana do XX Wydziału Krajowego Rejestru Sądowego Sądu Rejonowego dla Łodzi – Śródmieścia pod nr KRS 0000281004; NIP 731-196-13-95; REGON 100361232.
+    </div>
+</div>
