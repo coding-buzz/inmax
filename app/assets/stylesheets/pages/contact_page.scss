@@ -12,7 +12,7 @@
             font-weight: 400;
         }
 
-        .data-wrapper, .map-wrapper {
+        .data-wrapper {
             display: inline-block;
         }
 
@@ -21,71 +21,65 @@
             float: left;
         }
 
-        .map-wrapper {
-            height: 300px;
+        .contact-form {
+            display: inline-block;
             width: 60%;
+            min-height: 370px;
             margin-left: -10px;
-        }
+            margin-bottom: 40px;
 
-        #map {
-            width: 100%;
-            height: 100%;
-        }
-    }
+            label {
+                display: block;
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
 
-    .contact-form {
-        max-width: 400px;
-        margin-bottom: 40px;
+            input, textarea {
+                width: 100%;
+                height: 32px;
+                border: 1px solid #DDDDDD;
+                box-sizing: border-box;
+                padding: 2px 12px;
+                font-size: 14px;
+                margin-bottom: 12px;
+                transition: border-color 0.5s;
 
-        label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 4px;
-        }
+                &:focus {
+                    outline: none;
+                    border: 1px solid #BBBBBB;
+                }
+            }
 
-        input, textarea {
-            width: 100%;
-            height: 32px;
-            border: 1px solid #DDDDDD;
-            box-sizing: border-box;
-            padding: 2px 12px;
-            font-size: 14px;
-            margin-bottom: 12px;
-            transition: border-color 0.5s;
+            textarea {
+                resize: vertical;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                min-height: 140px;
+            }
 
-            &:focus {
-                outline: none;
-                border: 1px solid #BBBBBB;
+            .send-message-btn {
+                background: #014B96;
+                border: none;
+                color: #FFFFFF;
+                font-size: 14px;
+                padding: 12px 30px;
+                letter-spacing: 1px;
+                font-weight: 300;
+                text-transform: uppercase;
+                transition: background 0.5s;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background: #013365;
+                }
             }
         }
 
-        textarea {
-            resize: vertical;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            min-height: 140px;
-        }
 
-        .send-message-btn {
-            background: #014B96;
-            border: none;
-            color: #FFFFFF;
-            font-size: 14px;
-            padding: 12px 30px;
-            letter-spacing: 1px;
-            font-weight: 300;
-            text-transform: uppercase;
-            transition: background 0.5s;
-
-            &:focus {
-                outline: none;
-            }
-
-            &:hover {
-                cursor: pointer;
-                background: #013365;
-            }
-        }
     }
 
     .legal-note {
