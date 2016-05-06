@@ -11,11 +11,15 @@
     .logo {
         width: 174px;
         height: 96px;
-        background: #014B96;
+        background: #004CFF;
         position: absolute;
         left: 20px;
         top: 0px;
         z-index: 10;
+
+        img {
+            width: 174px;
+        }
     }
 
     .page-navigation {
