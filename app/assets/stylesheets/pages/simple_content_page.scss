@@ -1,0 +1,33 @@
+.simple-content-page {
+
+    a {
+        text-decoration: none;
+        color: #014B96;
+        border-bottom: 1px solid #014B96;
+        font-weight: 400;
+    }
+
+    .photos {
+        .photo {
+            background: #EEE;
+            display: inline-block;
+        }
+
+        .photo-1 {
+            width: 900px;
+            height: 450px;
+            margin-bottom: 35px;
+        }
+
+        .photo-2 {
+            width: 430px;
+            height: 240px;
+        }
+
+        .photo-3 {
+            width: 430px;
+            height: 240px;
+            float: right;
+        }
+    }
+}
