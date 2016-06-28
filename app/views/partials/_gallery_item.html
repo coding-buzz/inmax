@@ -1,0 +1,14 @@
+<% image = @cms_site.files.where(:file_file_name => param_1).first %>
+
+<% if image %>
+    <% image_url = image.file.url %>
+    <% thumb_url = image_url.sub('/original', '/gallery_thumb') %>
+
+    <a class="gallery-item-image" href="<%= image_url %>">
+        <img src="<%= thumb_url %>" alt="<%= param_1 %>"></img>
+    </a>
+<% else %>
+    <a class="gallery-item-image" href="#">
+        <img src="<%= param_1 %>" alt="<%= param_1 %>"></img>
+    </a>
+<% end %>
