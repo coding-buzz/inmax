@@ -8,6 +8,7 @@
         float: left;
         position: relative;
         white-space: nowrap;
+        font-weight: 300;
 
         &:before {
             content: attr(data-hover);

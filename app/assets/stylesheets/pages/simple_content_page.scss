@@ -11,22 +11,27 @@
         .photo {
             background: #EEE;
             display: inline-block;
+            overflow: hidden;
+
+            img {
+                max-width: 100%;
+            }
         }
 
         .photo-1 {
             width: 900px;
-            height: 450px;
+            height: 600px;
             margin-bottom: 35px;
         }
 
         .photo-2 {
             width: 430px;
-            height: 240px;
+            height: 286px;
         }
 
         .photo-3 {
             width: 430px;
-            height: 240px;
+            height: 286px;
             float: right;
         }
     }

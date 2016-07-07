@@ -18,3 +18,7 @@
 .clearfix {
     clear: both;
 }
+
+html {
+	font-weight: 100;
+}
