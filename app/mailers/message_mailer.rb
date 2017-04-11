@@ -3,6 +3,6 @@ class MessageMailer < ApplicationMailer
     @name = name
     @email = email
     @content = content
-    mail(to: 'marcin@coding.buzz', subject: 'Wiadomość ze strony inmax.com.pl')
+    mail(to: 'inmax@inmax.com.pl', subject: 'Wiadomość ze strony inmax.com.pl')
   end
 end
